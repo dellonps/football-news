@@ -34,6 +34,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1","cristian-dillon-footballshop.pbp.cs.ui.ac.id"]
 
+CSRF_TRUSTED_ORIGINS = [
+    "<https://cristian-dillon-footballnews.pbp.cs.ui.ac.id/>"
+]
 # Application definition
 
 INSTALLED_APPS = [
@@ -106,9 +109,7 @@ else:
         }
     }
 
-CSRF_TRUSTED_ORIGINS = [
-    "<https://cristian-dillon-footballnews.pbp.cs.ui.ac.id/>"
-]
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
